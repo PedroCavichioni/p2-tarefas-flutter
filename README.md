@@ -52,17 +52,17 @@ flutter run
 ## Capturas de tela
 
 ### Tela de login
-![Tela de login](screenshots/Screenshot_20261114_160417.png)
+![Tela de login](screenshots/01-login.png)
 
 ### Cadastro de usuário
-![Tela de cadastro de usuário](screenshots/Screenshot_20261114_160510.png)
+![Tela de cadastro de usuário](screenshots/02-cadastro-usuario.png)
 
 ### Tela inicial
-![Tela inicial](screenshots/Screenshot_20261114_160533.png)
+![Tela inicial](screenshots/03-inicio.png)
 
 ### Minhas tarefas
-![Tela de minhas tarefas](screenshots/Screenshot_20261114_160541.png)
+![Tela de minhas tarefas](screenshots/04-minhas-tarefas.png)
 
 ### Cadastro de tarefa
-![Tela de cadastro de tarefa](screenshots/Screenshot_20261114_160549.png)
+![Tela de cadastro de tarefa](screenshots/05-cadastro-tarefa.png)
 
