@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import '../widgets/drawer_menu.dart';
 
-// Versão intermediária (etapa 7): saudação + Drawer. Contadores vêm na etapa 9.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

@@ -6,7 +6,7 @@ class DrawerMenu extends StatelessWidget {
   const DrawerMenu({super.key});
 
   void _ir(BuildContext context, String rota) {
-    Navigator.pop(context); // fecha o drawer
+    Navigator.pop(context);
     Navigator.pushNamedAndRemoveUntil(context, rota, (r) => false);
   }
 

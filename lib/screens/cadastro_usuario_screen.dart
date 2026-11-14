@@ -35,7 +35,6 @@ class _CadastroUsuarioScreenState extends State<CadastroUsuarioScreen> {
         email: _emailCtrl.text.trim(),
         senha: _senhaCtrl.text,
       );
-      // Usuário já autenticado: volta à raiz, onde o AuthGate exibe a Home.
       if (mounted) Navigator.popUntil(context, (r) => r.isFirst);
     } catch (e) {
       if (mounted) {

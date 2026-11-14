@@ -5,7 +5,7 @@ class Tarefa {
   final String titulo;
   final String descricao;
   final DateTime dataVencimento;
-  final String prioridade; // Baixa | Média | Alta
+  final String prioridade;
   final bool concluida;
 
   Tarefa({

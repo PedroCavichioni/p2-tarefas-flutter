@@ -20,7 +20,6 @@ class AppTheme {
   );
 }
 
-/// Controla o ThemeMode e persiste a escolha com SharedPreferences.
 class ThemeController extends ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.light;
   ThemeMode get themeMode => _themeMode;

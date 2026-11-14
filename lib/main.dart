@@ -13,7 +13,7 @@ import 'themes/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await themeController.carregar(); // recupera o tema salvo (SharedPreferences)
+  await themeController.carregar();
   runApp(const MyApp());
 }
 
@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Reconstrói o MaterialApp quando o tema muda -> reflete em todas as telas.
     return ListenableBuilder(
       listenable: themeController,
       builder: (context, _) => MaterialApp(
@@ -42,8 +41,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Decide entre Login e Home conforme a sessão do Firebase.
-/// O Firebase mantém a sessão ao fechar/abrir o app.
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
 
