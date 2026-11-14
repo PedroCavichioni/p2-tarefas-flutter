@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../services/auth_service.dart';
+import '../widgets/drawer_menu.dart';
 
-// Versão simples (etapa 6): só saudação e botão de sair.
+// Versão intermediária (etapa 7): saudação + Drawer. Contadores vêm na etapa 9.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -10,19 +11,26 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = AuthService().usuarioAtual!;
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Início'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            tooltip: 'Sair',
-            onPressed: () => AuthService().logout(),
-          ),
-        ],
-      ),
-      body: Center(
-        child: Text('Olá, ${user.displayName ?? 'usuário'}!',
-            style: Theme.of(context).textTheme.headlineSmall),
+      appBar: AppBar(title: const Text('Início')),
+      drawer: const DrawerMenu(),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Olá, ${user.displayName ?? 'usuário'}!',
+                style: Theme.of(context).textTheme.headlineSmall),
+            const SizedBox(height: 24),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                icon: const Icon(Icons.checklist),
+                label: const Text('Ver minhas tarefas'),
+                onPressed: () => Navigator.pushNamed(context, '/tarefas'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

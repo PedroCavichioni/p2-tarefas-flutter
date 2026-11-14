@@ -4,14 +4,16 @@ import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
 import 'screens/cadastro_usuario_screen.dart';
+import 'screens/configuracoes_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/tarefas_screen.dart';
 import 'themes/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await themeController.carregar();
+  await themeController.carregar(); // recupera o tema salvo (SharedPreferences)
   runApp(const MyApp());
 }
 
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Reconstrói o MaterialApp quando o tema muda -> reflete em todas as telas.
     return ListenableBuilder(
       listenable: themeController,
       builder: (context, _) => MaterialApp(
@@ -31,6 +34,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (_) => const AuthGate(),
           '/cadastro': (_) => const CadastroUsuarioScreen(),
+          '/tarefas': (_) => const TarefasScreen(),
+          '/configuracoes': (_) => const ConfiguracoesScreen(),
         },
       ),
     );

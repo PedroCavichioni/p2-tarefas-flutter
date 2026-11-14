@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../themes/app_theme.dart';
+import '../widgets/drawer_menu.dart';
 
 class ConfiguracoesScreen extends StatelessWidget {
   const ConfiguracoesScreen({super.key});
@@ -9,6 +10,7 @@ class ConfiguracoesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Configurações')),
+      drawer: const DrawerMenu(),
       body: ListenableBuilder(
         listenable: themeController,
         builder: (context, _) => ListView(
