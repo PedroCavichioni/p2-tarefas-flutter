@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"p2-tarefas","appId":"1:420182475650:android:ddf107152b1fd757bac59b","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"p2-tarefas","configurations":{"android":"1:420182475650:android:ddf107152b1fd757bac59b","ios":"1:420182475650:ios:0aa6ce0df92a577dbac59b"}}}}}}
