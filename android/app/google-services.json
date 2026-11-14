@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "420182475650",
-    "project_id": "p2-tarefas",
-    "storage_bucket": "p2-tarefas.firebasestorage.app"
+    "project_number": "331134419376",
+    "firebase_url": "https://p2-tarefas-b1a7e-default-rtdb.firebaseio.com",
+    "project_id": "p2-tarefas-b1a7e",
+    "storage_bucket": "p2-tarefas-b1a7e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:420182475650:android:ddf107152b1fd757bac59b",
+        "mobilesdk_app_id": "1:331134419376:android:11b6b83d82e247cec61675",
         "android_client_info": {
           "package_name": "com.example.p2_tarefas"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC1tYaHsSxNRbgl0kG4ohNCFnHw-z6p68s"
+          "current_key": "AIzaSyBk-ASWLfvPmf7FGdMtSJtynIpf_lIDrrI"
         }
       ],
       "services": {

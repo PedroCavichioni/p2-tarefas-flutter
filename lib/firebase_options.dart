@@ -50,19 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC1tYaHsSxNRbgl0kG4ohNCFnHw-z6p68s',
-    appId: '1:420182475650:android:ddf107152b1fd757bac59b',
-    messagingSenderId: '420182475650',
-    projectId: 'p2-tarefas',
-    storageBucket: 'p2-tarefas.firebasestorage.app',
+    apiKey: 'AIzaSyBk-ASWLfvPmf7FGdMtSJtynIpf_lIDrrI',
+    appId: '1:331134419376:android:11b6b83d82e247cec61675',
+    messagingSenderId: '331134419376',
+    projectId: 'p2-tarefas-b1a7e',
+    databaseURL: 'https://p2-tarefas-b1a7e-default-rtdb.firebaseio.com',
+    storageBucket: 'p2-tarefas-b1a7e.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDshkcTVcZzjjdoh5Ywh4zbDN7eozp3uWM',
-    appId: '1:420182475650:ios:0aa6ce0df92a577dbac59b',
-    messagingSenderId: '420182475650',
-    projectId: 'p2-tarefas',
-    storageBucket: 'p2-tarefas.firebasestorage.app',
+    apiKey: 'AIzaSyBxss5fbEHLwfou0-Qvjit4l4Q5vnqU1U0',
+    appId: '1:331134419376:ios:2c5e1b858ce1c524c61675',
+    messagingSenderId: '331134419376',
+    projectId: 'p2-tarefas-b1a7e',
+    databaseURL: 'https://p2-tarefas-b1a7e-default-rtdb.firebaseio.com',
+    storageBucket: 'p2-tarefas-b1a7e.firebasestorage.app',
     iosBundleId: 'com.example.p2Tarefas',
   );
 }
